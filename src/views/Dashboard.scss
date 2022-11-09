@@ -1,0 +1,49 @@
+@import '../variables';
+
+.dashboard {
+
+    @media screen and (min-width: 992px) {
+        min-height: calc(100vh - 12.25rem);
+    }
+    
+    &__user-avatar {
+        position: relative;
+    }
+
+    &__user-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    &__button {
+        color: $color-primary;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+
+        &:hover, &--active {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: $color-muted;
+        }
+
+        &--active,
+        &--active:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    
+    li.nav-item button.nav-link {
+        color: $color-primary;
+    }
+
+    li.nav-item button.nav-link.active {
+        color: $color-muted;
+    }
+    
+} 
