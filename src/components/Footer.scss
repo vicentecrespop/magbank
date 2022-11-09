@@ -1,0 +1,12 @@
+.footer-logos {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 992px) {
+        justify-content: flex-end;
+    }
+
+    img {
+        margin: 0 10px;
+    }
+}
